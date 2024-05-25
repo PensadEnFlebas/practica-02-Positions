@@ -1,8 +1,47 @@
-/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-shadow: 2px 2px 4px black;
+}
+@font-face {
+  font-family: protest-revolution;
+  src: url(./fonts/ProtestRevolution-Regular.ttf);
+}
+
+button {
+  color: rgb(169, 163, 163);
+  text-shadow: none;
+  background-color: #000000;
+  border-radius: 5px;
+  border-color: rgb(169, 163, 163);
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+p {
+  padding: 5px;
+}
+
+li {
+  padding: 2px;
+  list-style-type: none;
+}
+
+a {
+  cursor: help;
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h3 {
+  font-family: protest-revolution;
+  font-size: 25px;
+  color: rgb(9, 142, 9);
+  margin-bottom: 5px;
 }
 
 body {
@@ -12,17 +51,19 @@ body {
   padding: 0;
   min-height: 100vh;
   background-color: #000000;
-  color: #9ad79b;
+  background-image: url(https://res.cloudinary.com/dd0zwrz0b/image/upload/v1716572450/02.%20CSS%20Pr%C3%A1ctica%20Positions/Untitled_design_1_copia_ejicdp.png);
+  color: rgb(154, 215, 155);
 }
 
 header {
+  font-family: protest-revolution;
   position: fixed;
   top: 0px;
   padding: 10px 0 10px 10px;
   width: 100%;
   margin-bottom: 15px;
   border-bottom: 2px dotted #9ad79b;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(5, 43, 22, 0.75);
   z-index: 4;
 }
 
@@ -32,50 +73,91 @@ header {
   }
 }
 
-.content {
+.capital {
+  font-family: protest-revolution;
+  font-size: 50px;
+  color: rgb(9, 142, 9);
+  z-index: 5;
+}
+
+.capital-light {
+  font-family: protest-revolution;
+  font-size: 28px;
+  color: rgb(154, 215, 155);
+  z-index: 5;
+}
+
+.lowercase {
+  font-size: 20px;
+  color: rgb(9, 142, 9);
+  z-index: 5;
+}
+
+.lowercase-green {
+  font-family: protest-revolution;
+  font-size: 25px;
+  color: rgb(9, 142, 9);
+}
+
+.informacion-z {
   width: 100%;
-  padding: 0 0 10px 10px;
-  margin: 5rem 0;
+  padding: 5px 0 10px 10px;
+  margin: 6rem 0;
   border-top: 2px dotted #9ad79b;
   border-bottom: 2px dotted #9ad79b;
+  background-color: #344039bf;
+  background-image: url(https://res.cloudinary.com/dd0zwrz0b/image/upload/v1716622904/02.%20CSS%20Pr%C3%A1ctica%20Positions/Untitled_design_copia_6_vazu5l.png);
   z-index: 2;
+}
+
+h2 > .capital,
+p > .capital {
+  font-size: 25px;
+}
+
+button > .capital {
+  font-size: 15px;
 }
 
 .sidebar {
   position: fixed;
-  top: 11rem;
+  top: 15rem;
   right: 0.75rem;
-  width: 150px;
-  height: 160px;
-  padding: 10px;
+  width: 170px;
+  height: 190px;
+  padding: 5px;
   border: 2px dotted #9ad79b;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(5, 43, 22, 0.75);
   z-index: 3;
 }
 
-li {
-  list-style-type: none;
-}
-
-.features {
+.historiaz {
+  position: relative;
   width: 100%;
   text-align: center;
   padding: 10px;
-  margin-top: 12.5rem;
+  margin-top: 13.5rem;
   border-top: 2px dotted #9ad79b;
   border-bottom: 2px dotted #9ad79b;
+  background-color: rgba(52, 64, 57, 0.75);
   z-index: 2;
+}
+
+.icon-historiaz {
+  position: relative;
+  top: 1rem;
+  font-size: 25px;
 }
 
 footer {
   position: fixed;
-  bottom: 10px;
+  bottom: 0px;
   width: 100%;
   margin: auto;
   padding: 10px 10px;
   border-top: 2px dotted #9ad79b;
   border-top-width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(5, 43, 22, 0.75);
   z-index: 4;
   text-align: center;
 }
