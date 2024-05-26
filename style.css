@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: protest-revolution;
-  src: url(ProtestRevolution-Regular.ttf);
+  src: url(./fonts/ProtestRevolution-Regular.ttf);
 }
 
 button {
@@ -67,12 +67,6 @@ header {
   z-index: 4;
 }
 
-@media screen and (max-width: 211px) {
-  header {
-    font-size: 0.75em;
-  }
-}
-
 .capital {
   font-family: protest-revolution;
   font-size: 50px;
@@ -119,7 +113,7 @@ button > .capital {
   font-size: 15px;
 }
 
-.sidebar {
+aside {
   position: fixed;
   top: 15rem;
   right: 0.75rem;
@@ -137,6 +131,7 @@ button > .capital {
   text-align: center;
   padding: 10px;
   margin-top: 13.5rem;
+  margin-block-end: 13rem;
   border-top: 2px dotted #9ad79b;
   border-bottom: 2px dotted #9ad79b;
   background-color: rgba(52, 64, 57, 0.75);
@@ -145,7 +140,7 @@ button > .capital {
 
 .icon-historiaz {
   position: relative;
-  top: 1rem;
+  top: 0.5rem;
   font-size: 25px;
 }
 
@@ -153,11 +148,28 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  margin: auto;
-  padding: 10px 10px;
+  padding: 3px;
+  font-size: 8px;
   border-top: 2px dotted #9ad79b;
   border-top-width: 100%;
   background-color: rgba(5, 43, 22, 0.75);
   z-index: 4;
   text-align: center;
+}
+
+@media screen and (max-width: 350px) {
+  header {
+    font-size: 0.75em;
+  }
+}
+@media screen and (max-width: 742px) {
+  aside {
+    top: 16.5rem;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  aside {
+    top: 11rem;
+  }
 }
