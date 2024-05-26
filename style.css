@@ -117,7 +117,7 @@ aside {
   position: fixed;
   top: 15rem;
   right: 0.75rem;
-  width: 170px;
+  width: 175px;
   height: 190px;
   padding: 5px;
   border: 2px dotted #9ad79b;
@@ -170,6 +170,10 @@ footer {
 
 @media screen and (max-height: 500px) {
   aside {
-    top: 11rem;
+    top: 10rem;
+    font-size: 0.75em;
+    width: 200px;
+    height: 63px;
+    overflow-y: auto;
   }
 }
